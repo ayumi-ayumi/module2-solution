@@ -1,3 +1,102 @@
+body {
+  font-size: 16px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  width: 100%;
+}
+
+
 h1 {
   color: #333;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 1.75em;
+}
+
+.sections {
+  width: 100%;
+}
+
+section {
+  border: 1px solid #333;
+  border-radius: 4px;
+  position: relative;
+  background-color: rgb(236, 225, 225);
+}
+
+.text {
+  padding: 36px 16px 16px;
+  margin: 0 auto;
+  width: 85%;
+}
+
+.title-chicken, .title-beef, .title-fish {
+  font-size: 1.25em;
+  width: 150px;
+  height: 30px;
+  line-height: 30px;
+  border-bottom: 1px solid #333;
+  border-left: 1px solid #333;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-align: center;
+  letter-spacing: 1.5px;
+}
+
+.title-chicken {
+  background-color: rgb(218, 164, 164);
+}
+
+.title-beef {
+  background-color: rgb(198, 201, 155);
+}
+
+.title-fish {
+  background-color: rgb(162, 192, 144);
+}
+
+/* Mobile  */
+@media (max-width: 767px) {
+  section {
+    width: 85%;
+    margin: 0 auto 20px;
+  }
+  .text {
+    padding: 36px 16px 16px;
+    margin: 0 auto;
+    width: 90%;
+  }
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 991px) {
+  .sections {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  section {
+    width: 45%;
+    margin-bottom: 20px;
+  }
+  .fish {
+    width: 95%;
+  }
+  .fish .text {
+    padding: 34px 16px 16px;
+    margin: 0 auto;
+    width: 93%;
+  }
+}
+
+/* Desktop */
+@media (min-width: 992px) {
+  .sections {
+    display: flex;
+  }
+  section {
+    margin: 0 20px;
+  }
 }
